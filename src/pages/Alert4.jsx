@@ -13,7 +13,8 @@ const Alert4 = () => {
         <section className="hero-banner">
           <div className="hero-bg" style={{ backgroundImage: `url(${fond})` }}></div>
             <div className="hero-center">
-              <div className="alert-level-4">☠️ Alerte de niveau 4 : interaction critique détectée<br />
+              <div className="alert-level-4">☠️ Alerte de niveau 4 :<br />
+              Interaction critique détectée<br />
               Ineraction hautement risquée confirmée.<br />
               Risque clinique sévère et immédiat.<br />
               Source ANSM / Hedrine<br />

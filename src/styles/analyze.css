@@ -1,18 +1,18 @@
 .analyze-btn {
-    background-color: var(--color-sauge); 
+    background-color: #422305; 
     color: #ffffff;
     border: none;
     border-radius: 2rem;
     cursor: pointer;
     width: 90%;
-    max-width: 28rem;
+    max-width: 15rem;
     height: 60px;
-    text-emphasis: bold;
-    font-size: 20px;
-    margin-top: 20px;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 .analyze-btn:hover {
-    background-color: #3b5d26; 
+    background-color: #221701; 
 }
 
 .form-content {

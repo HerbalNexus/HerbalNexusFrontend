@@ -13,7 +13,8 @@ const Alert1 = () => {
         <section className="hero-banner">
           <div className="hero-bg" style={{ backgroundImage: `url(${fond})` }}></div>
             <div className="hero-center">
-              <div className="alert-level-1">✅ Alerte de niveau 1 : interaction faible détectée<br />
+              <div className="alert-level-1">✅ Alerte de niveau 1 :<br />
+              Interaction faible détectée<br />
               Signal simulé.<br />
               Hypothétique, non validé cliniquement.<br />
               Confiance graduée.<br />

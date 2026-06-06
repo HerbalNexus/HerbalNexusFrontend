@@ -22,7 +22,7 @@ const Ordonnancesnow = () => {
   return (
     <div className="page">
       <Header />
-      <main className="ordonnance-page">
+      <main className="content">
         <div className="ordonnance-container">
           <h1>Ordonnances actuelles</h1>
           <p className="subtitle">

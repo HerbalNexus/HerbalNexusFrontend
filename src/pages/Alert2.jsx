@@ -15,11 +15,11 @@ const Alert2 = () => {
         <section className="hero-banner">
           <div className="hero-bg" style={{ backgroundImage: `url(${fond})` }}></div>
             <div className="hero-center">
-              <div className="alert-level-2">⚠️ Alerte de niveau 2 : interaction probable détectée<br />
+              <div className="alert-level-2">⚠️ Alerte de niveau 2 :<br />
+              Interaction probable détectée<br />
               Interaction probable.<br />
               Mécanisme enzymatique connu.<br />
               Non directement documenté.<br />
-              <button className="alert-back-btn-2" onClick={() => window.history.back()}>Retour</button>
               </div>
               <div className="alert-recommendation">
                 <p className="alert-reco-text">
@@ -27,7 +27,7 @@ const Alert2 = () => {
                 </p>
                 <div className="alert-actions">
                   <button className="btn-ignore" onClick={() => navigate("/history")}>Ignorer la recommandation</button>
-                  <button className="btn-qrcode">Générer un QR code professionnel de santé</button>
+                  <button className="btn-qrcode">Générer le QR code d'un professionnel de santé</button>
                   <button className="btn-back" onClick={() => navigate("/analyser")}>Revenir à la page précédente</button>
                 </div>
               </div>

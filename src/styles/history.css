@@ -1,12 +1,7 @@
 .account-page {
   min-height: calc(100vh - 140px);
   padding: 40px 20px;
-  background:
-    linear-gradient(
-      135deg,
-      #6B6A66 0%,
-      #e8dfd1 100%
-    );
+  background: #6B6A66,
 }
 
 .account-container {

@@ -13,7 +13,8 @@ const Alert3 = () => {
         <section className="hero-banner">
           <div className="hero-bg" style={{ backgroundImage: `url(${fond})` }}></div>
             <div className="hero-center">
-              <div className="alert-level-3">🚨 Alerte de niveau 3 : interaction dangereuse détectée<br />
+              <div className="alert-level-3">🚨 Alerte de niveau 3 :<br />
+              Interaction dangereuse détectée<br />
               Ineraction documentée.<br />
               Risque clinique établi.<br />
               Source ANSM / Hedrine<br />
