@@ -16,7 +16,7 @@
 
 .account-container h1 {
   text-align: center;
-  color: white;
+  color: var(--night);
   margin-bottom: 30px;
   font-size: 40px;
   font-family: var(--font-display);
@@ -35,6 +35,7 @@
 .account-card h2 {
   margin-top: 0;
   color: var(--night);
+  margin-bottom: 10px;
 }
 
 .profile-grid {
@@ -159,11 +160,8 @@
   background: none;
   border: none;
   cursor: pointer;
-
   font-size: 16px;
-
   padding: 2px 4px;
-
   transition: transform 0.2s ease;
 }
 

@@ -10,6 +10,8 @@ import Alert1 from './pages/Alert1';
 import Alert2 from './pages/Alert2';
 import Alert3 from './pages/Alert3';
 import Alert4 from './pages/Alert4';
+import Ordonnancespast from './pages/Ordonnancespast';
+import Ordonnancesnow from './pages/Ordonnancesnow';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,6 +26,8 @@ const router = createBrowserRouter(
       <Route path="alerte2" element={<Alert2 />} />
       <Route path="alerte3" element={<Alert3 />} />
       <Route path="alerte4" element={<Alert4 />} />
+      <Route path="ordonnancespast" element={<Ordonnancespast />} />
+      <Route path="ordonnancesnow" element={<Ordonnancesnow />} />
     </Route>
   )
 )

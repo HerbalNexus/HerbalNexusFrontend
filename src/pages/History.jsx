@@ -4,10 +4,12 @@ import '../styles/history.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import fond from '../assets/imagehome.jpeg'
+import { useNavigate } from 'react-router-dom'
 
 const History = () => {
   const [email, setEmail] = useState('jean.dupont@email.fr')
   const [editingEmail, setEditingEmail] = useState(false)
+  const navigate = useNavigate()
 
   const handleSaveEmail = (e) => {
   e.preventDefault();
@@ -81,8 +83,8 @@ const History = () => {
                 <strong>Millepertuis + Fluoxétine</strong>
                 <p>05/06/2026</p>
               </div>
-              <span className="badge badge-danger">
-                Niveau 3
+              <span className="badge badge-warning">
+                Niveau 2
               </span>
             </div>
 
@@ -91,8 +93,8 @@ const History = () => {
                 <strong>Curcuma + Warfarine</strong>
                 <p>12/05/2026</p>
               </div>
-              <span className="badge badge-warning">
-                Niveau 2
+              <span className="badge badge-danger">
+                Niveau 3
               </span>
             </div>
 
@@ -108,19 +110,37 @@ const History = () => {
           </section>
 
           <section className="account-card">
+            <h2>Ajouter des documents</h2>
+            <div className="folder-grid">
+              <div className="folder-card">
+                <div className="folder-icon">📄</div>
+                <h3>Ajouter une ordonnance</h3>
+                <div className="ordonnance-actions">
+                  <button className="view-btn">
+                    Importer un fichier
+                  </button>
+                  <button className="download-btn">
+                    Scanner l'ordonnance
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="account-card">
             <h2>Mes documents</h2>
             <div className="folder-grid">
               <div className="folder-card">
                 <div className="folder-icon">📁</div>
                 <h3>Ordonnances actuelles</h3>
                 <p>Consulter les prescriptions en cours.</p>
-                <button className="folder-btn">Ouvrir</button>
+                <button className="folder-btn" onClick={() => navigate('/ordonnancesnow')}>Ouvrir</button>
               </div>
               <div className="folder-card">
                 <div className="folder-icon">🗂️</div>
                 <h3>Ordonnances passées</h3>
                 <p>Historique des prescriptions archivées.</p>
-                <button className="folder-btn">Ouvrir</button>
+                <button className="folder-btn" onClick={() => navigate('/ordonnancespast')}>Ouvrir</button>
               </div>
             </div>
           </section>
