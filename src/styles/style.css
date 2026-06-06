@@ -1,0 +1,120 @@
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+html, body { height: 100%; margin: 0; }
+
+:root {
+  --night:       #1A2E3B;
+  --petrol:      #2A6E8C;
+  --petrol-light:#E8F3F8;
+  --warm-white:  #F7F6F2;
+  --slate:       #6B6A66;
+  --sage:        #5A8A2A;
+
+  --alert1:      #C0392B;
+  --alert1-bg:   #FDF1F1;
+  --alert1-border: rgba(192,57,43,0.25);
+  --alert2:      #D4820A;
+  --alert2-bg:   #FDF6EE;
+  --alert2-border: rgba(212,130,10,0.25);
+  --alert3:      #467518;
+  --alert3-bg:   #F3F8EC;
+  --alert3-border: rgba(90,138,42,0.25);
+  --alert4:      #140202;
+  --alert4-bg:   #f1e5e5;
+  --alert4-border: rgba(20,2,2,0.25);
+
+  --surface:     #FFFFFF;
+  --surface-alt: #F2F1ED;
+  --border:      rgba(26,46,59,0.12);
+  --border-mid:  rgba(26,46,59,0.2);
+
+  --font-display: 'DMSerif', Georgia, serif;
+  --font-body:    'Inter', Arial, sans-serif;
+
+  --nav-h: 58px;
+  --max-w: 740px;
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  14px;
+  --radius-xl:  20px;
+}
+
+@font-face {
+  font-family: "DMSerif";
+  src: url(../fonts/DMSerifDisplay-Regular.ttf) format("truetype");
+}
+
+.nav {
+  display: flex;
+  color: var(--night);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 80px;
+  background: var(--night);
+  position: relative;
+  z-index: 10;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.nav-title {
+  color: var(--petrol);
+  margin-left: 12px;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+}
+
+.herbal {
+  color: white;
+}
+
+.nexus {
+  color: var(--petrol);
+}
+
+.nav-logo-img { height: 50px; width: auto; display: block; }
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
+.site-footer {
+  background: var(--night);
+  text-align: center;
+  padding: 1.75rem 2rem;
+  font-size: 15px;
+  color: var(--warm-white);
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}

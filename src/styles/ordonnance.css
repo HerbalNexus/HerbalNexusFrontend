@@ -1,0 +1,113 @@
+.ordonnance-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.ordonnance-container h1 {
+  text-align: center;
+  color: var(--warm-white);
+  margin-bottom: 5px;
+  margin-top: 20px;
+  font-family: var(--font-display);
+  font-size: 50px;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--warm-white);
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.ordonnance-card {
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow:
+    0 8px 25px rgba(0,0,0,0.08);
+}
+
+.ordonnance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.ordonnance-header h2 {
+  margin: 0;
+  color: var(--petrol);
+}
+
+.doctor-badge {
+  background: rgba(44, 62, 80, 0.1);
+  color: var(--night);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.ordonnance-content h3 {
+  margin-bottom: 10px;
+  color: var(--night);
+}
+
+.ordonnance-content ul {
+  padding-left: 20px;
+}
+
+.ordonnance-content li {
+  margin-bottom: 5px;
+}
+
+.ordonnance-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.view-btn,
+.download-btn {
+  border: none;
+  border-radius: 12px;
+  padding: 8px 18px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.view-btn {
+  background: var(--petrol);
+  color: white;
+}
+
+.download-btn {
+  background: #bcc3dd;
+  color: var(--night);
+}
+
+.view-btn:hover,
+.download-btn:hover {
+  transform: translateY(-2px);
+}
+
+.back-btn {
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 8px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--night);
+  transition: 0.2s;
+  margin-bottom: 20px;
+}
+
+.back-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.6);
+}
