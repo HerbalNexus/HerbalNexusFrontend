@@ -104,7 +104,7 @@ html, body { height: 100%; margin: 0; }
   background: var(--night);
   text-align: center;
   padding: 1.75rem 2rem;
-  font-size: 15 px;
+  font-size: 15px;
   color: var(--warm-white);
   border-top: 1px solid rgba(255,255,255,0.06);
 }

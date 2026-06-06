@@ -3,7 +3,9 @@ import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } 
 import Home from './pages/Home';
 import Analyze from './pages/Analyze';
 import History from './pages/History';
-
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Connecter from './pages/Connecter';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -11,6 +13,9 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="analyser" element={<Analyze />} />
       <Route path="history" element={<History />} />
+      <Route path="connecter" element={<Connecter />} />
+      <Route path="login" element={<Login />} />
+      <Route path="register" element={<Register />} />
     </Route>
   )
 )

@@ -96,7 +96,7 @@ export default function MultipleInput({ value, inputs, setInputs }) {
                         className="w-16 font-bold border text-night border-gray-300 rounded-md py-1 px-2 ring-2 ring-sauge focus:outline-none focus:ring-2 focus:ring-petrol" 
                         placeholder="1"
                     />
-                    <span className="font-bold text-night">cachet(s) et </span>
+                    <span className="font-bold text-night">cachet(s) / </span>
                     <input type="number" value={frequency}  onChange={handleFrequencyChange} min="1" className="w-16 font-bold border text-night border-gray-300 rounded-md py-1 px-2 ring-2 ring-sauge focus:outline-none focus:ring-2 focus:ring-petrol" placeholder="Fréquence"/>
                     <span className="font-bold text-night"> fois </span>
                     <select 
