@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import MultipleInput from '../components/MultipleInput';
 import '../styles/style.css'
+import '../styles/analyze.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
@@ -19,12 +20,14 @@ const Analyze = () => {
     <div className="page">
       <Header />
       <main className="content">
-      <form className="space-y-4" onSubmit={handleSubmit}>
-      <MultipleInput value={"Médicaments"} inputs={medicaments} setInputs={setMedicaments}/>
-      <MultipleInput value={"Compléments"} inputs={complements} setInputs={setComplements}/>
-      <MultipleInput value={"Autres"} inputs={autres} setInputs={setAutres}/>
+      <form onSubmit={handleSubmit}>
+      <div className="form-content">
+        <MultipleInput value={"Médicaments"} inputs={medicaments} setInputs={setMedicaments}/>
+        <MultipleInput value={"Compléments"} inputs={complements} setInputs={setComplements}/>
+        <MultipleInput value={"Autres"} inputs={autres} setInputs={setAutres}/>
+      </div>
       <div className="flex justify-center" type="button">
-        <button className="w-full m-5 hover:cursor-pointer bg-sauge hover:bg-petrol text-warm-white font-bold py-2 px-4 rounded mt-4" type="submit">Analyser</button>
+        <button className="analyze-btn" type="submit">Analyser</button>
       </div>
       </form>
       </main>
