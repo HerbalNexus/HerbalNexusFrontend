@@ -15,7 +15,6 @@ const Analyze = () => {
     
   }
 
-
   return (
     <div className="page">
       <Header />
