@@ -97,7 +97,8 @@ export default function MultipleInput({ value, inputs, setInputs }) {
                             type="number" 
                             value={dose} 
                             onChange={handleDoseChange} 
-                            min="1" 
+                            min="0.25" 
+                            step="0.25"
                             className="input-number-field" 
                             placeholder="1"
                         />
