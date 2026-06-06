@@ -1,0 +1,95 @@
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background .15s, border-color .15s, transform .1s;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn:active { transform: scale(0.98); }
+
+.btn-sm { padding: 7px 14px; font-size: 13px; }
+.btn-md { padding: 10px 20px; }
+.btn-lg { padding: 13px 28px; font-size: 15px; }
+
+.btn-petrol {
+  background: var(--petrol);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.btn-petrol:hover { 
+  background: #1c4f64; 
+  text-decoration: none;
+}
+
+.btn-night {
+  background: var(--night);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.btn-night:hover { 
+  background: #0d242e; 
+  text-decoration: none;
+}
+
+.btn-full { width: 100%; }
+
+/* ─── Layout ─── */
+.page-wrapper {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 2.5rem 2rem 4rem;
+}
+
+.page-header {
+  margin-bottom: 2rem;
+}
+.page-header h1 { font-size: 30px; margin-bottom: 6px; }
+.page-header .subtitle { font-size: 15px; color: var(--slate); }
+
+/* ─── Section label ─── */
+.section-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--slate-light);
+  margin-bottom: 1rem;
+}
+
+/* ─── Spacers ─── */
+.mt-sm { margin-top: 10px; }
+.mt-md { margin-top: 1rem; }
+.mt-lg { margin-top: 1.5rem; }
+.mt-xl { margin-top: 2rem; }
+.mb-sm { margin-bottom: 10px; }
+.mb-md { margin-bottom: 1rem; }
+.mb-lg { margin-bottom: 1.5rem; }
+.mb-xl { margin-bottom: 2rem; }
+
+/* ─── Utility ─── */
+.text-muted { color: var(--slate); }
+.text-sm { font-size: 13px; }
+.text-xs { font-size: 12px; }
+.flex { display: flex; }
+.flex-center { display: flex; align-items: center; }
+.gap-sm { gap: 8px; }
+.gap-md { gap: 12px; }
+.gap-lg { gap: 1rem; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
