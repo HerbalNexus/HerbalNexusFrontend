@@ -103,3 +103,23 @@ body {
 }
 
 .btn-full { width: 100%; }
+
+@media (max-width: 768px) {
+  .hero-center {
+    margin-top: 0px;
+  }
+.hero-box h1 {
+  font-size: 30=px;
+}
+
+.hero-box h2 {
+  font-size: 25px;
+}
+
+.hero-box p {
+  margin-top: 5px;
+  color: var(--night);
+  font-size: 20px;
+}
+
+}

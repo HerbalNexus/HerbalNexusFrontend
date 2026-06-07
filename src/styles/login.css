@@ -104,3 +104,13 @@
 .signup-link a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 500px) {
+  .auth-box {
+    margin: 40px 20px;
+    padding: 1.5rem;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

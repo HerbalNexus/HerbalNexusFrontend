@@ -47,7 +47,7 @@
 
 .profile-grid p {
   font-weight: 700;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 .history-item {
@@ -177,4 +177,14 @@
 .save-icon:hover,
 .edit-icon:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .profile-grid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .profile-grid span {
+    margin-top: 0px;
+  }
 }

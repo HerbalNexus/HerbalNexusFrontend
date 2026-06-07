@@ -118,3 +118,61 @@ html, body { height: 100%; margin: 0; }
 .content {
   flex: 1;
 }
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 12px 0px;
+  }
+
+  .nav-title {
+    font-size: 1.6rem; 
+    margin-bottom: 20px;
+  }
+
+  .nav-links {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 0;
+
+  }
+
+  .nav-links li {
+    flex: 0 0 33.33%;        
+    text-align: center;      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;      
+    justify-content: center;
+  }
+  .nav-links a {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+  }
+.site-footer {
+  background: var(--night);
+  text-align: center;
+  padding: 0.5rem 2rem;
+  font-size: 13px;
+  color: var(--warm-white);
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+
+}
+.nav-links li::after {
+  content: "|";
+  color: rgba(255, 255, 255, 0.3); 
+  font-size: 0.9rem;
+}
+
+.nav-links li:last-child::after {
+  content: "";
+}
